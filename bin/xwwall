@@ -476,9 +476,9 @@ sub_gui() {
       <hseparator space-expand="true" space-fill="true" name="sep"></hseparator>
       <comboboxtext space-expand="true" space-fill="true">
         <variable>MODE</variable>
+        <item>fill</item>
         <item>scale</item>
         <item>max</item>
-        <item>fill</item>
         <item>center</item>
         <item>tile</item>
       </comboboxtext>
