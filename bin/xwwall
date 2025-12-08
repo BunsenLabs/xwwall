@@ -378,7 +378,7 @@ button_gui() {
 		shopt -s globstar
 		for WALL in "$BGDIR"/*{,/**}
 		do
-			[[ "$(file --brief --mime-type "$WALL" )" = *image* ]] || continue # test mime
+			[[ "$(file --dereference --brief --mime-type "$WALL" )" = *image* ]] || continue # test mime
 			# we take advantage of bash math here
 			# for a nicish GUI width *must* be consistent
 			i=$((c/4))
